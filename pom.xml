@@ -27,6 +27,10 @@
 	<properties>
 		<java-version>1.8</java-version>
 		<mitreid-connect-version>1.3.1</mitreid-connect-version>
+		<sonar.host.url>http://3.17.175.2:9000/</sonar.host.url>
+		<sonar.login>admin</sonar.login>
+		<sonar.password>minnu</sonar.password>
+		
 	</properties>
 	
 	<dependencyManagement>
@@ -40,6 +44,22 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	
+	<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Releases Nexus Repository</name>
+	      <url>http://3.17.183.184:8081/repository/paytm-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Mithun Technologies Snapshot Nexus Repository </name>
+	      <url>http://3.17.183.184:8081/repository/paytm-snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
 	
 	<dependencies>
 		<dependency>
